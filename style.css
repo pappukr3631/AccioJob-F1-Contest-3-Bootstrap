@@ -34,24 +34,18 @@
 
 .column {
     display: grid;
-    width: 90%;
     height: 600px;
     grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: 150px 150px 300px;
+    /* grid-template-rows: 150px 150px 300px; */
+    grid-template-rows: 1fr 1fr 2fr;
     gap: 10px;
-    padding: 0 8%;
-    padding-bottom: 20px;
-    justify-content: center;
+    padding: 0 10% 20px;
 }
 
 .column div {
     width: 100%;
     background-image: url('img/car2.jpg');
     background-size: cover;
-    justify-content: center;
-    /* resize: ; */
-    /* max-width: fit-content; */
-    /* max-height: fit-content; */
 }
 
 .item1 {
@@ -68,7 +62,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 60px 10%;
+    padding: 80px 10%;
     gap: 20px;
 }
 
@@ -87,4 +81,85 @@
     display: inline;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+
+/* Media queries */
+
+
+@media screen and (max-width: 320px) {
+
+    /* Footer */
+    .back-to-top {
+        display: flex;
+        flex-direction: column;
+        padding: 10px !important;
+        margin: 0px;
+    }
+
+    .back-to-top p {
+        width: fit-content;
+        padding: 0px;
+        margin-left: 0px;
+        justify-items: flex-start;
+        font-size: small;
+    }
+
+    .back-to-top a {
+        width: fit-content;
+        font-size: x-small;
+        margin-left: 150px !important;
+
+    }
+
+    /* Card */
+
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* padding: 80px 10%; */
+        /* gap: 20px; */
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+
+    /* Carousel */
+    .carousel-caption {
+        left: 15%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+
+    /* Footer */
+    .back-to-top {
+        display: flex;
+        
+    }
+
+    .back-to-top p {
+        font-size: small;
+        margin-left: 5% !important;
+    }
+
+    .back-to-top a {
+        font-size: small;
+        margin-right: 5% !important;
+    }
+
+    /* Card */
+
+    .card-body {
+        font-size: 10px;
+    }
+
+    .card-body h5 , .card-body a{
+        font-size: 12px;
+    }
+
 }
