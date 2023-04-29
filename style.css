@@ -125,6 +125,11 @@
     .carousel-caption {
         left: 15%;
     }
+
+    /* Gallery */
+    .column {
+        height: 200px;
+    }
 }
 
 
@@ -154,6 +159,11 @@
 
     .card-body h5 , .card-body a{
         font-size: 12px;
+    }
+
+    /* Gallery */
+    .column {
+        height: 400px;
     }
 
 }
