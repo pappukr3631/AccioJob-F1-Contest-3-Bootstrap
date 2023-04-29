@@ -15,7 +15,7 @@
 
 .car img{
     width: 100%;
-    /* vertical-align: middle; */
+    vertical-align: middle;
 }
 
 .car {
@@ -34,9 +34,9 @@
 
 .column {
     display: grid;
-    width: 100%;
+    width: 90%;
     height: 600px;
-    grid-template-columns: 300px 180px 180px 300px;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 150px 150px 300px;
     gap: 10px;
     padding: 0 8%;
@@ -48,7 +48,10 @@
     width: 100%;
     background-image: url('img/car2.jpg');
     background-size: cover;
-    
+    justify-content: center;
+    /* resize: ; */
+    /* max-width: fit-content; */
+    /* max-height: fit-content; */
 }
 
 .item1 {
@@ -64,12 +67,24 @@
 .card-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 70px 20px;
+    justify-content: center;
+    padding: 60px 10%;
+    gap: 20px;
 }
+
+
+/* Footer */
 
 .back-to-top {
     display: flex;
     justify-content: space-between;
-    padding-right: 10%;
+    align-content: center;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
+}
+
+.back-to-top p, .back-to-top a {
+    display: inline;
+    margin-left: 10%;
+    margin-right: 10%;
 }
